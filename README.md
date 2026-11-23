@@ -68,8 +68,8 @@ The pipeline integrates three primary CSV datasets:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/MernaMero/](https://github.com/MernaMero/)<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/MernaAyman-l/sales-prediction-project.git
+   cd sales-prediction-project
    ```
 
 2. **Install dependencies:**
@@ -84,10 +84,10 @@ The pipeline integrates three primary CSV datasets:
 
 ## Results Summary
 
-*(Update with your final run metrics)*
+The README does not currently publish verified final evaluation metrics. The notebook should be run from top to bottom in the documented environment before adding MAE, RMSE, and R² values here. No performance figures are claimed until they have been reproduced and checked.
 
-| Model | MAE ($) | RMSE ($) | R² Score |
-| :--- | :---: | :---: | :---: |
-| **Gradient Boosting Regressor** | `TBD` | `TBD` | `TBD` |
-| **Random Forest Regressor** | `TBD` | `TBD` | `TBD` |
-| **Linear Regression** | `TBD` | `TBD` | `TBD` |
+## Notes & Limitations
+
+- This is an educational forecasting project based on historical Walmart sales data; it is not a live forecasting service.
+- The repository includes serialized model and scaler files. Only load pickle files from sources you trust.
+- Before interpreting the reported evaluation, verify that all lag features are generated using past observations only and that the chronological split prevents future information from leaking into training.
